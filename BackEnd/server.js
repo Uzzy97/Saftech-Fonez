@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //Establishing a connection the MYSQL database locally only
 // All information from https://www.npmjs.com/package/mysql#introduction
 var mysql      = require('mysql');
@@ -21,6 +22,8 @@ connection.end();
 /*
 All code bellow has been taken from old project on servers
 =======
+=======
+>>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
 =======
 >>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
 /* 
@@ -64,6 +67,9 @@ connection.end(function(err) {
 Examples from mongoDB below
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
+=======
 >>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
 =======
 >>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
@@ -88,7 +94,11 @@ var postSchema = new Schema({
 var PostModel = mongoose.model('post', postSchema);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //Here we are configuring express to use body-parser as middle-ware. 
+=======
+//Here we are configuring express to use body-parser as middle-ware.
+>>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
 =======
 //Here we are configuring express to use body-parser as middle-ware.
 >>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a

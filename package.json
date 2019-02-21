@@ -24,7 +24,11 @@
     "core-js": "^2.5.4",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "mysql": "github:mysqljs/mysql",
+=======
+    "routing": "0.0.2",
+>>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
 =======
     "routing": "0.0.2",
 >>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
