@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 //Establishing a connection the MYSQL database locally only
 // All information from https://www.npmjs.com/package/mysql#introduction
 var mysql      = require('mysql');
@@ -21,11 +19,7 @@ connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
 connection.end();
 /*
 All code bellow has been taken from old project on servers
-=======
-=======
->>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
-=======
->>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
+
 /* 
 All information from https://www.npmjs.com/package/mysql#introduction
 Please do a npm install before using server.js
@@ -66,13 +60,6 @@ connection.end(function(err) {
 
 Examples from mongoDB below
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
-=======
->>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
-=======
->>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
 var express = require('express');
 var app = express();
 var path = require('path');
