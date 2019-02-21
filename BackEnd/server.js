@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 //Establishing a connection the MYSQL database locally only
 // All information from https://www.npmjs.com/package/mysql#introduction
 var mysql      = require('mysql');
@@ -18,6 +20,53 @@ connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
 connection.end();
 /*
 All code bellow has been taken from old project on servers
+=======
+=======
+>>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
+/* 
+All information from https://www.npmjs.com/package/mysql#introduction
+Please do a npm install before using server.js
+Enter in command line 'npm install mysqljs/mysql'
+*/
+// Establishing a connection
+var mysql = require('mysql');
+var connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: '',
+    database: 'saftech_fonez'
+});
+
+connection.connect(function (err) {
+    if (err) {
+        console.error('error connecting: ' + err.stack);
+        return;
+    }
+    console.log('connected as id ' + connection.threadId);
+});
+
+// Test for some user generated query
+var product = 'phone';
+var sql    = 'SELECT * FROM stock WHERE productType = ' + connection.escape(product);
+connection.query(sql, function (error, results, fields) {
+  if (error) throw error;
+  console.log(sql);
+});
+
+
+connection.end(function(err) {
+    // The connection is terminated now
+    console.log('The connection has now ended');
+  });
+
+/*
+
+Examples from mongoDB below
+
+<<<<<<< HEAD
+>>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
+=======
+>>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
 var express = require('express');
 var app = express();
 var path = require('path');
@@ -37,7 +86,15 @@ var postSchema = new Schema({
 })
 
 var PostModel = mongoose.model('post', postSchema);
+<<<<<<< HEAD
+<<<<<<< HEAD
 //Here we are configuring express to use body-parser as middle-ware. 
+=======
+//Here we are configuring express to use body-parser as middle-ware.
+>>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
+=======
+//Here we are configuring express to use body-parser as middle-ware.
+>>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 

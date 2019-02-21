@@ -22,7 +22,15 @@
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
     "core-js": "^2.5.4",
+<<<<<<< HEAD
+<<<<<<< HEAD
     "mysql": "github:mysqljs/mysql",
+=======
+    "routing": "0.0.2",
+>>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
+=======
+    "routing": "0.0.2",
+>>>>>>> 0cbe9f2c73fa76b60a54231d92b4ee537f49ee4a
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"
