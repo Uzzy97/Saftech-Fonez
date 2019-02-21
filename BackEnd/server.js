@@ -1,25 +1,3 @@
-
-//Establishing a connection the MYSQL database locally only
-// All information from https://www.npmjs.com/package/mysql#introduction
-var mysql      = require('mysql');
-var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : '',
-  database : 'my_db'
-});
- 
-connection.connect();
- 
-connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
-  if (error) throw error;
-  console.log('The solution is: ', results[0].solution);
-});
- 
-connection.end();
-/*
-All code bellow has been taken from old project on servers
-
 /* 
 All information from https://www.npmjs.com/package/mysql#introduction
 Please do a npm install before using server.js
@@ -47,7 +25,7 @@ var product = 'phone';
 var sql    = 'SELECT * FROM stock WHERE productType = ' + connection.escape(product);
 connection.query(sql, function (error, results, fields) {
   if (error) throw error;
-  console.log(sql);
+  console.log(results);
 });
 
 
