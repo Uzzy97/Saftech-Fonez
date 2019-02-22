@@ -1,0 +1,10 @@
+.slideshow{
+    flex-direction: column; 
+    display: flex;
+    position: relative;
+    background-color: white;
+    display: block;
+    width: 500;
+    margin-top: 110px;
+   
+}

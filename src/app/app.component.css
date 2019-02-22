@@ -11,10 +11,25 @@
 .hero{
     height: 100%;
     width: 100%;
-    background-image: url("../assets/images/background.png");
-    
+    background: linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url("../assets/images/floor.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
     
 }
+
+.header{
+    color: aliceblue;
+    padding-left: 55%;
+    width: 90%;
+    margin-top: 20px;
+    float: center;
+    
+}
+
+
+
