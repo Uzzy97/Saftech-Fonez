@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-//import { PostDetailsComponent } from './post-details/post-details.component';
-//import {PostService} from './services/post.services';
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes} from '@angular/router';
@@ -14,14 +12,9 @@ import { MatInputModule,
   MatIconModule,
   MatToolbarModule,
   MatExpansionModule} from '@angular/material';
-//import { PostCreateComponent } from './post-create/post-create.component';
 import { HomeComponent } from './home/home.component';
-//import { ContactComponent } from './contact/contact.component';
-//import { CarsComponent } from './cars/cars.component';
-//import { SubmitComponent } from './submit/submit.component';
-//import { Error404Component } from './error404/error404.component';
-//import { EditFeedbackComponent } from './edit-feedback/edit-feedback.component';
-//import { ViewFeedbackComponent } from './view-feedback/view-feedback.component';
+import { TestPageComponent } from './test-page/test-page.component';
+import { ErrorComponent } from './error/error.component';
 
 const appRoutes: Routes = [
 
@@ -30,13 +23,25 @@ const appRoutes: Routes = [
     component: HomeComponent
   },
 
+  {
+    path: 'test',
+    component: TestPageComponent
+  },
+
+  {
+    path: '**',
+    component: ErrorComponent
+  },
+
   
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    TestPageComponent,
+    ErrorComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
