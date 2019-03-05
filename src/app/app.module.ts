@@ -17,6 +17,14 @@ import { TestPageComponent } from './test-page/test-page.component';
 import { ErrorComponent } from './error/error.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { SamsungComponent } from './samsung/samsung.component';
+import { HeaderComponent } from './components/shared/header/header.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
+import { FilterComponent } from './components/shopping-cart/filter/filter.component';
+import { ProductListComponent } from './components/shopping-cart/product-list/product-list.component';
+import { CartComponent } from './components/shopping-cart/cart/cart.component';
 
 const appRoutes: Routes = [
 
@@ -28,6 +36,10 @@ const appRoutes: Routes = [
   {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'samsung',
+    component: SamsungComponent
   },
 
   {
@@ -55,7 +67,15 @@ const appRoutes: Routes = [
     TestPageComponent,
     ErrorComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    SamsungComponent,
+    HeaderComponent,
+    FooterComponent,
+    NavbarComponent,
+    ShoppingCartComponent,
+    FilterComponent,
+    ProductListComponent,
+    CartComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
