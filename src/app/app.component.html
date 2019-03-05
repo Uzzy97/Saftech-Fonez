@@ -1,39 +1,68 @@
-<!--Styling Navigation Bar-->
+<html>
+<head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+      <div class="wrapper">
+            <header>
 
-<div class="container">
-  <div class="hero">
-<div class ="header">
-      <mat-toolbar-row id="header">
-          <!--Homepage-->
-          <button mat-button [routerLink]="['/home']">
-            <h2>Shop Phones</h2>
-          </button>
-          <!--Routing - Directing to used cars-->
-          <button mat-button [routerLink]="['/cars']">
-            <h2>Shop Accessories</h2>
-          </button>
-          <button mat-button [routerLink]="['/cars']">
-            <h2>Shop Laptop & Tablets</h2>
-          </button>
-          <button mat-button id="color" [matMenuTriggerFor]="menu">
-            <h2>Feedback</h2>
-          </button>
-          <!--Drop down menu-->
-          <mat-menu id="color" #menu="matMenu">
-            <button id="color" mat-menu-item [routerLink]="['/list']">View Feedbacks</button>
-            <button id="color" mat-menu-item [routerLink]="['/create']">Add Feedback</button>
-            <button id="color" mat-menu-item [routerLink]="['/list']">Edit Feedback</button>
-      
-          </mat-menu>
-          <button mat-button [routerLink]="['/contact']">
-            <h2>Contact</h2>
-          </button>
-      
-        </mat-toolbar-row>
-        </div>
+                  <nav>
 
-  </div>
+                        <div class="menu-icon">
+                              <i class="fa fa-bars fa-2x"></i>
+                        </div>
 
-</div>
+                        <div class="logo">
+                              LOGO
+                        </div>
 
-<router-outlet></router-outlet>
+                        <div class="menu">
+                              <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Contact</a></li>
+                              </ul>
+                        </div>
+                  </nav>
+
+            </header>
+
+            <div class="content">
+                  <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+                  <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                  </p>
+            </div>
+      </div>
+
+      <script type="text/javascript">
+
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+
+</body>
+</html>

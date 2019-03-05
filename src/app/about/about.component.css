@@ -1,0 +1,13 @@
+.about
+{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column; 
+    position: fixed;
+    display: block;
+    width: 90%;
+    margin-top: 110px;
+    margin-left: 5%;
+    text-align: center;
+    
+}
