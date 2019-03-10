@@ -1,3 +1,8 @@
-<p>
-  product-list works!
-</p>
+<mat-expansion-panel [expanded]="true" *ngFor="let post of posts">
+  <mat-expansion-panel-header> 
+    {{ post.prodName }}
+    {{ post.productType }}
+  </mat-expansion-panel-header>
+  <p>{{ post.description }}
+  </p>
+</mat-expansion-panel>

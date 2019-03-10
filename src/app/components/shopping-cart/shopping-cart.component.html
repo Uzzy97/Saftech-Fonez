@@ -5,9 +5,9 @@
   <div class="col-md-8">
     <app-product-list>
       <table>
-        <tr ng-repeat="x in names">
-          <td>{{ x.Name }}</td>
-          <td>{{ x.productType }}</td>
+        <tr *ngFor="let post of posts">
+          <td>{{ post.prodName }}</td>
+          <td>{{ post.productType }}</td>
         </tr>
       </table>
       </app-product-list>

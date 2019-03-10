@@ -1,5 +1,5 @@
 export interface Post {
-    number: string;
+    prodName: string;
     productType: string;
     Price: string
     description: string;
