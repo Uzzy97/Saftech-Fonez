@@ -3,8 +3,12 @@ All information from https://www.npmjs.com/package/mysql#introduction
 Please do a npm install before using server.js
 Enter in command line 'npm install mysqljs/mysql'
 */
-// Establishing a connection
+
+const express = require('express');
 var mysql = require('mysql');
+const app = express();
+
+// Establishing a connection
 var connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
@@ -12,6 +16,7 @@ var connection = mysql.createConnection({
     database: 'saftech_fonez'
 });
 
+// Connecting to the database
 connection.connect(function (err) {
     if (err) {
         console.error('error connecting: ' + err.stack);
@@ -19,6 +24,24 @@ connection.connect(function (err) {
     }
     console.log('connected as id ' + connection.threadId);
 });
+
+// Getting information from the database
+app.get('/phones', function(product, sql){
+    product = 'phone';
+    sql    = 'SELECT * FROM stock WHERE productType = ' + connection.escape(product);
+    connection.query(sql, function (error, results, fields) {
+      if (error) throw error;
+      console.log(results);
+    });
+    })
+
+// Listing to port number 8080 @ http://localhost:8080/
+app.listen('8080', () => {
+    console.log('Server started on port 8080');
+});
+
+/*
+
 
 // Test for some user generated query
 var product = 'phone';
@@ -33,6 +56,18 @@ connection.end(function(err) {
     // The connection is terminated now
     console.log('The connection has now ended');
   });
+*/
+  // Getting information from the database
+/*
+  app.get('/api/posts', function(product, sql){
+    product = 'phone';
+    sql    = 'SELECT * FROM stock WHERE productType = ' + connection.escape(product);
+    connection.query(sql, function (error, results, fields) {
+      if (error) throw error;
+      console.log(results);
+    });
+    })
+  */  
 
 /*
 
