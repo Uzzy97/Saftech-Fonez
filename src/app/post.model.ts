@@ -1,8 +1,8 @@
 export interface Post {
     prodName: string;
     productType: string;
-    Price: string
+    Price: number;
     description: string;
-    stock: string;
+    stock: number;
 
 }

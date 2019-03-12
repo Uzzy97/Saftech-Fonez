@@ -3,7 +3,6 @@ All information from https://www.npmjs.com/package/mysql#introduction
 Please do a npm install before using server.js
 Enter in command line 'npm install mysqljs/mysql'
 */
-
 var express = require('express');
 var mysql = require('mysql');
 var app = express();
@@ -51,14 +50,13 @@ app.get('/api/posts', function (req, res){
 })
 
 // Listing to port number 8081 @ http://localhost:8080/
-var server = app.listen(8081, function () {
-    var host = server.address().address
-    var port = server.address().port
+app.listen(8081, function () {
+    console.log('connected to port 8081')
 
-    console.log("Example app listening at http://%s:%s", host, port)
 })
 
 /*
+
 // Test for some user generated query
 var product = 'phone';
 var sql    = 'SELECT * FROM stock WHERE productType = ' + connection.escape(product);

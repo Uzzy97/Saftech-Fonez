@@ -21,7 +21,7 @@ export class PostService {
     return [...this.posts];
   }
 
-  addPost(prodName: string, productType: string, price: string, description: string, stock: string): Observable<any> {
+  addPost(prodName: string, productType: string, price: number, description: string, stock: number): Observable<any> {
     const post: Post = { prodName: prodName, productType: productType, Price: price, description: description, stock: stock };
     return this.http.post("http://localhost:8081/api/posts", post);
   }
