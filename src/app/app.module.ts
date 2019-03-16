@@ -25,6 +25,7 @@ import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.
 import { FilterComponent } from './components/shopping-cart/filter/filter.component';
 import { ProductListComponent } from './components/shopping-cart/product-list/product-list.component';
 import { CartComponent } from './components/shopping-cart/cart/cart.component';
+import { ProductItemComponent } from './components/shopping-cart/product-list/product-item/product-item.component';
 
 const appRoutes: Routes = [
 
@@ -75,7 +76,8 @@ const appRoutes: Routes = [
     ShoppingCartComponent,
     FilterComponent,
     ProductListComponent,
-    CartComponent
+    CartComponent,
+    ProductItemComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
