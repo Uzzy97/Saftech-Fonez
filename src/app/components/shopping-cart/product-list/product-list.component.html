@@ -1,12 +1,7 @@
-<div class="row">
-  <app-product-item></app-product-item>
-  <app-product-item></app-product-item>
-  <app-product-item></app-product-item>
-  <app-product-item></app-product-item>
-  <app-product-item></app-product-item>
-  <app-product-item></app-product-item>
-  <app-product-item></app-product-item>
-  <app-product-item></app-product-item>
-  <app-product-item></app-product-item>
-  <app-product-item></app-product-item>
-</div>
+<mat-expansion-panel [expanded]="true" *ngFor="let post of posts">
+  <mat-expansion-panel-header> 
+    {{ post.prodName }}
+  </mat-expansion-panel-header>
+  {{ post.productType }}
+  
+</mat-expansion-panel>
