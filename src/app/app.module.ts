@@ -26,6 +26,7 @@ import { FilterComponent } from './components/shopping-cart/filter/filter.compon
 import { ProductListComponent } from './components/shopping-cart/product-list/product-list.component';
 import { CartComponent } from './components/shopping-cart/cart/cart.component';
 import { ProductItemComponent } from './components/shopping-cart/product-list/product-item/product-item.component';
+import { PostService } from './services/post.service';
 
 const appRoutes: Routes = [
 
@@ -52,12 +53,6 @@ const appRoutes: Routes = [
     path: 'test',
     component: TestPageComponent
   },
-
-  {
-    path: '**',
-    component: ErrorComponent
-  },
-
   
 ];
 
@@ -94,7 +89,7 @@ const appRoutes: Routes = [
   MatExpansionModule,
   MatMenuModule
   ],
-  providers: [],
+  providers: [PostService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

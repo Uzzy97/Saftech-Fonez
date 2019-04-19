@@ -1,18 +1,16 @@
-<app-navbar></app-navbar>
-      <div class="container">
-            <div class="row">
-                  <div class="col-md-12">
-                        <app-header></app-header>
-                  </div>
-            </div>
-            <div class="row">
-                  <div class="col-md-12">
-                       <app-shopping-cart></app-shopping-cart>       
-                  </div>
-            </div>
-            <div class="row">
-                  <div class="col-md-12">
-                         <app-footer></app-footer>           
-                  </div>
-            </div>
-      </div>
+<mat-toolbar>
+  
+  <mat-toolbar-row>
+      <div id="container">
+    <span class="title-center">
+        <button mat-button [routerLink]="['']" color="Warn">Party Organizer App</button>
+    </span>
+  </div>
+  </mat-toolbar-row>
+  <mat-toolbar-row id = "color">
+      <button mat-button [routerLink]="['/home']" color="Warn">HOME</button>
+      <button mat-button [routerLink]="['/about']" color="Warn">Contacts</button>
+      <button mat-button [routerLink]="['/samsung']">Edit Contact</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>
