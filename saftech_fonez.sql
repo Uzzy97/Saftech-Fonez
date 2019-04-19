@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Apr 18, 2019 at 01:33 PM
+-- Generation Time: Apr 18, 2019 at 02:53 PM
 -- Server version: 5.7.21-log
 -- PHP Version: 5.6.35
 
@@ -21,6 +21,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `saftech_fonez`
 --
+CREATE DATABASE IF NOT EXISTS `saftech_fonez` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `saftech_fonez`;
 
 -- --------------------------------------------------------
 
