@@ -11,3 +11,36 @@
     text-align: center;
     
 }
+
+.column {
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+    text-align: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .icon {
+    color: aliceblue;
+    float: left;
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 3%;
+    text-align: center;
+  }
+
+  .signature {
+    color: black;
+    font-family: 'Brush Script MT';
+    font-size: 300%;
+    font-style: italic;
+    font-weight: 1;
+    font-stretch: ultra-condensed;
+  }
