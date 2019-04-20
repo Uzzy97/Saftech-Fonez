@@ -1,9 +1,14 @@
-.landing{
-margin-top: 10%;
+.image{
+    
+    float: left;
+    text-align: center;
 }
 
-.button
-{
- 
-    
-}
+.icon {
+    color: crimson;
+    float: left;
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 3%;
+    text-align: center;
+  }
