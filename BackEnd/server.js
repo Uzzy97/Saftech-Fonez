@@ -39,8 +39,18 @@ app.use(function (req, res, next) {
 });
 
 // Getting information from the database
-app.get('/api/posts', function (req, res){
+app.get('/api/phones', function (req, res){
     product = 'phone';
+    sql = 'SELECT * FROM stock WHERE productType = ' + connection.escape(product);
+    connection.query(sql, function (error, results, fields) {
+        if (error) throw error;
+        console.log(results);
+        res.json(results);
+    });
+})
+
+app.get('/api/accessory', function (req, res){
+    product = 'accessory';
     sql = 'SELECT * FROM stock WHERE productType = ' + connection.escape(product);
     connection.query(sql, function (error, results, fields) {
         if (error) throw error;

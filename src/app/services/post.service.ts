@@ -11,7 +11,11 @@ export class PostService {
   constructor(private http: HttpClient) { }
 
   getPostsData(): Observable<any> {
-    return this.http.get("http://localhost:8081/api/posts");
+    return this.http.get("http://localhost:8081/api/phones");
+  }
+
+  getPostsDataAccessory(): Observable<any> {
+    return this.http.get("http://localhost:8081/api/accessory");
   }
 
   private posts: Post[] = [];
@@ -21,17 +25,17 @@ export class PostService {
     return [...this.posts];
   }
 
-  addPost(prodName: string, productType: string, price: number, description: string, stock: number): Observable<any> {
-    const post: Post = { prodName: prodName, productType: productType, Price: price, description: description, stock: stock };
-    return this.http.post("http://localhost:8081/api/posts", post);
+  addPost(prodName: string, productType: string, price: number, description: string, stock: number, images: Blob): Observable<any> {
+    const post: Post = { prodName: prodName, productType: productType, Price: price, description: description, stock: stock , images: images};
+    return this.http.post("http://localhost:8081/api/phones", post);
   }
 
   deletePost(id: String): Observable<any> {
-    return this.http.delete("http://localhost:8081/api/posts/" + id);
+    return this.http.delete("http://localhost:8081/api/phones/" + id);
   }
 
   getPost(): Observable<any> {
-    return this.http.get("http://localhost:8081/api/posts/");
+    return this.http.get("http://localhost:8081/api/phones/");
   }
 
 }

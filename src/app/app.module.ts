@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,7 +13,6 @@ import { MatInputModule,
   MatToolbarModule,
   MatExpansionModule} from '@angular/material';
 import { HomeComponent } from './home/home.component';
-import { TestPageComponent } from './test-page/test-page.component';
 import { ErrorComponent } from './error/error.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
@@ -24,9 +23,11 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 import { FilterComponent } from './components/shopping-cart/filter/filter.component';
 import { ProductListComponent } from './components/shopping-cart/product-list/product-list.component';
-import { CartComponent } from './components/shopping-cart/cart/cart.component';
-import { ProductItemComponent } from './components/shopping-cart/product-list/product-item/product-item.component';
+import { CartComponent } from './components/shopping-cart/cart/cart.component'
 import { PostService } from './services/post.service';
+import { WelcomePageComponent } from './welcome-page/welcome-page.component';
+import { PhonesComponent } from './phones/phones.component';
+import { AccessoryComponent } from './accessory/accessory.component';
 
 const appRoutes: Routes = [
 
@@ -40,19 +41,13 @@ const appRoutes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'samsung',
-    component: SamsungComponent
+    path: 'phone',
+    component: PhonesComponent
   },
-
   {
-    path: 'contact',
-    component: ContactComponent
-  },
-
-  {
-    path: 'test',
-    component: TestPageComponent
-  },
+    path: 'accessory',
+    component: AccessoryComponent
+  }
   
 ];
 
@@ -60,7 +55,6 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HomeComponent,
-    TestPageComponent,
     ErrorComponent,
     AboutComponent,
     ContactComponent,
@@ -72,7 +66,9 @@ const appRoutes: Routes = [
     FilterComponent,
     ProductListComponent,
     CartComponent,
-    ProductItemComponent
+    WelcomePageComponent,
+    PhonesComponent,
+    AccessoryComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
