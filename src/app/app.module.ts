@@ -25,15 +25,14 @@ import { FilterComponent } from './components/shopping-cart/filter/filter.compon
 import { ProductListComponent } from './components/shopping-cart/product-list/product-list.component';
 import { CartComponent } from './components/shopping-cart/cart/cart.component'
 import { PostService } from './services/post.service';
-<<<<<<< HEAD
-import { ShopComponent } from './shop/shop.component';
-=======
-import { WelcomePageComponent } from './welcome-page/welcome-page.component';
-import { PhonesComponent } from './phones/phones.component';
-import { AccessoryComponent } from './accessory/accessory.component';
->>>>>>> 8b2f390726446bee7d886ea1b8b2394dd6b61a04
+
+
 
 const appRoutes: Routes = [
+  {
+    path: '',
+    component: HomeComponent
+  },
 
   {
     path: 'home',
@@ -44,15 +43,7 @@ const appRoutes: Routes = [
     path: 'about',
     component: AboutComponent
   },
-  {
-    path: 'phone',
-    component: PhonesComponent
-  },
-  {
-    path: 'accessory',
-    component: AccessoryComponent
-  }
-  
+
 ];
 
 @NgModule({
@@ -70,14 +61,7 @@ const appRoutes: Routes = [
     FilterComponent,
     ProductListComponent,
     CartComponent,
-<<<<<<< HEAD
-    ProductItemComponent,
-    ShopComponent
-=======
-    WelcomePageComponent,
-    PhonesComponent,
-    AccessoryComponent
->>>>>>> 8b2f390726446bee7d886ea1b8b2394dd6b61a04
+
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
