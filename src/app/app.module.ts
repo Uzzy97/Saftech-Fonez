@@ -26,6 +26,7 @@ import { CartComponent } from './components/shopping-cart/cart/cart.component'
 import { PostService } from './services/post.service';
 import { TestPageComponent } from './test-page/test-page.component';
 import { PhonesComponent } from './phones/phones.component';
+import { AccessoryComponent } from './accessory/accessory.component';
 
 
 
@@ -38,6 +39,11 @@ const appRoutes: Routes = [
   {
     path: 'home',
     component: HomeComponent
+  },
+  {
+
+    path: 'accessory',
+    component: AccessoryComponent
   },
 
   {
@@ -71,7 +77,8 @@ const appRoutes: Routes = [
     ProductListComponent,
     CartComponent,
     TestPageComponent,
-    PhonesComponent
+    PhonesComponent,
+    AccessoryComponent
 
   ],
   imports: [
