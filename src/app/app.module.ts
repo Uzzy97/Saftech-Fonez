@@ -81,7 +81,8 @@ const appRoutes: Routes = [
     CartComponent,
     TestPageComponent,
     PhonesComponent,
-    ShopComponent
+    ShopComponent,
+    AccessoryComponent
 
   ],
   imports: [
