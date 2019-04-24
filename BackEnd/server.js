@@ -41,7 +41,7 @@ app.use(function (req, res, next) {
 // Getting information from the database
 app.get('/api/phones', function (req, res){
     product = 'phone';
-    sql = 'SELECT * FROM stock WHERE productType = ' + connection.escape(product);
+    sql = 'SELECT * FROM stock WHERE productType = ' + connection.escape(product) + 'and stock > 0';
     connection.query(sql, function (error, results, fields) {
         if (error) throw error;
         console.log(results);
@@ -51,7 +51,7 @@ app.get('/api/phones', function (req, res){
 
 app.get('/api/accessory', function (req, res){
     product = 'accessory';
-    sql = 'SELECT * FROM stock WHERE productType = ' + connection.escape(product);
+    sql = 'SELECT * FROM stock WHERE productType = ' + connection.escape(product) + 'and stock > 0';
     connection.query(sql, function (error, results, fields) {
         if (error) throw error;
         console.log(results);
