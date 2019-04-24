@@ -34,8 +34,9 @@ export class PostService {
     return this.http.delete("http://localhost:8081/api/phones/" + id);
   }
 
-  getPost(): Observable<any> {
-    return this.http.get("http://localhost:8081/api/phones/");
+  
+  getPost(prodName: string): Observable<any> {
+    return this.http.get("http://localhost:8081/api/posts/" + prodName);
   }
 
 }
