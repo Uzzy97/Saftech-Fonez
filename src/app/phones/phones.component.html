@@ -6,7 +6,6 @@
     {{ post.Description }}
     <br>
     €{{ post.Price }}
-    <input type = "hidden" min="200" [(ngModel)] = "post.Price">
     <br>
     <mat-action-row>
         <button mat-button color="primary" [routerLink]="['/cart', post.Price]" >Buy Now!</button>   
