@@ -112,22 +112,83 @@ header h1{
 .blogContent a:hover{
   text-decoration: underline;
 }
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+
+
+.phones{
+  padding: 70px 0;
+  margin-top: -21px;
+  background: linear-gradient(45deg, #32cd32 0%,rgba(144,192,229,.4) 100%);
+  text-align: center;
+}
+.phonecontainer{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.product{
+  position: relative;
+  overflow: hidden;
+  max-height: 580px;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 10px #ccc;
+  transition: all .5s;
+}
+.product:hover{
+  box-shadow: 0 2px 13px #ccc;
+  transition: all .5s;
+}
+.product:hover img{
+  transform: scale(1.1);
+  transition: all .4s;
+}
+.productcontent{
+  position: absolute;
+  left: 0;
+  bottom: -45px;
+  width: 100%;
+  color: #fff;
+  padding: 10px 5px;
+  background: linear-gradient(45deg, #FFA500 0%,rgba(144,192,229,.4) 100%);
+  transition: all .5s;
+}
+.product:hover .productcontent{
+  bottom: 0;
+  transition: all .5s;
+}
+.productcontent h3{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+.productcontent h3 span{
+  display: block;
+  font-size: 60%;
+  margin-top: 5px;
+  font-weight: 600;
+  color:  #32cd32;
+}
+.productcontent a{
+  font-size: 14px;
+  font-weight: 500;
+}
+.productcontent .btn{
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  font-weight: 400;
+}
+.productcontent .btn:hover{
+  background:  #32cd32;
+  transition: all .5s;
+  text-decoration: none;
+}
+.productcontent a:hover{
+  text-decoration: underline;
+}
+
 @media (max-width:992px) {
   main{
     grid-template-columns: repeat(3, 1fr);
@@ -141,6 +202,9 @@ header h1{
   }
   header{
     width: 95%;
+  }
+  .productcontent{
+    bottom: 0;
   }
   .blogContent{
     bottom: 0;
