@@ -4,6 +4,5 @@ export interface Post {
     Price: number;
     description: string;
     stock: number;
-    images: Blob;
 
 }
