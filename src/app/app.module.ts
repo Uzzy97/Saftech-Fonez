@@ -27,6 +27,7 @@ import { PostService } from './services/post.service';
 import { TestPageComponent } from './test-page/test-page.component';
 import { PhonesComponent } from './phones/phones.component';
 import { ShopComponent } from './shop/shop.component';
+import { AccessoryComponent } from './accessory/accessory.component';
 
 
 
@@ -57,6 +58,10 @@ const appRoutes: Routes = [
   {
     path: 'cart/:Price',
     component: ShopComponent
+  },
+  {
+    path: 'accessory',
+    component: AccessoryComponent
   },
 ];
 
