@@ -28,7 +28,10 @@ import { TestPageComponent } from './test-page/test-page.component';
 import { PhonesComponent } from './phones/phones.component';
 import { ShopComponent } from './shop/shop.component';
 import { AccessoryComponent } from './accessory/accessory.component';
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4202a2763f9701b4d4988b73bd2105edb423d583
 
 
 const appRoutes: Routes = [
@@ -40,6 +43,11 @@ const appRoutes: Routes = [
   {
     path: 'home',
     component: HomeComponent
+  },
+  {
+
+    path: 'accessory',
+    component: AccessoryComponent
   },
 
   {
@@ -81,7 +89,8 @@ const appRoutes: Routes = [
     CartComponent,
     TestPageComponent,
     PhonesComponent,
-    ShopComponent
+    ShopComponent,
+    AccessoryComponent
 
   ],
   imports: [
