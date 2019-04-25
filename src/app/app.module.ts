@@ -28,10 +28,6 @@ import { TestPageComponent } from './test-page/test-page.component';
 import { PhonesComponent } from './phones/phones.component';
 import { ShopComponent } from './shop/shop.component';
 import { AccessoryComponent } from './accessory/accessory.component';
-<<<<<<< HEAD
-
-=======
->>>>>>> 4202a2763f9701b4d4988b73bd2105edb423d583
 
 
 const appRoutes: Routes = [
