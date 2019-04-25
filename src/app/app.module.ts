@@ -63,6 +63,10 @@ const appRoutes: Routes = [
     path: 'cart/:Price',
     component: ShopComponent
   },
+  {
+    path: 'accessory',
+    component: AccessoryComponent
+  },
 ];
 
 @NgModule({
